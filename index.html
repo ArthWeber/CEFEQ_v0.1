@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>Cefeq Ferramentas | Loja Virtual</title>
 </head>
 <body>
-    Olá mundo!
+    <div class="topbar">
+        <div class="topbar__container">
+            <h3 class="text--small">
+                <i class="ri-map-pin-fill"></i>
+                Rua Cel. Victor Celestino de Oliveira, 349 Centro Mafra/SC
+            </h3>
+            <h3 class="text--small">
+                <i class="ri-map-pin-time-fill"></i>
+                De segunda à sexta das 8:00hrs às 18:00hrs e sábado das 8:00hrs às 12:00hrs
+            </h3>
+            <h3 class="text--small">
+                <a href="#">
+                    <i class="ri-phone-fill"></i>
+                    (47)3645-3348
+                </a>                    
+            </h3>
+        </div>        
+    </div>
+    <header class="header">
+        <div class="header__container">
+            <!-- Menu de três pontos ao lado da logo -->
+            <div class="header__menu">
+                <button class="menu-icon" onclick="toggleMenu()">☰</button>
+                <div class="menu-dropdown">
+                    <div class="menu-dropdown__item">
+                        <button>
+                            <img src="./src/img/ico/CSIco.png" alt="Atendimento ao cliente">
+                            <span>
+                                Atendimento </br>
+                                ao cliente
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-dropdown__item">
+                        <button>
+                            <img src="./src/img/ico/UserIco.png" alt="Acessar conta">
+                            <span>
+                                Bem vindo(a), </br>
+                                <strong>Minha conta</strong>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-dropdown__item">
+                        <button>
+                            <img src="./src/img/ico/shopping-cart.png" alt="Carrinho">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Logo -->
+            <h1>
+                <img class="header__logo" src="./src/img/cefeqsc_logo.png" alt="Cefeq SC">
+            </h1>
+    
+            <!-- Search -->
+            <div class="search__container">
+                <input class="search__input" type="text" id="search-bar" placeholder="O que você procura?">
+                <button class="search-icon">
+                    <img src="./src/img/ico/zoom_9777349.png" alt="Pesquisar">
+                </button>
+            </div>
+    
+            <!-- Cliente (aparece em telas grandes) -->
+            <ul class="header__customer text">
+                <li class="header__customer__item">
+                    <button>
+                        <img src="./src/img/ico/CSIco.png" alt="Atendimento ao cliente">
+                        <span>
+                            Atendimento </br>
+                            ao cliente
+                        </span>
+                    </button>
+                </li>
+                <li class="header__customer__item">
+                    <button>
+                        <img src="./src/img/ico/UserIco.png" alt="Acessar conta">
+                        <span>
+                            Bem vindo(a), </br>
+                            <strong>Minha conta</strong>
+                        </span>
+                    </button>
+                </li>
+                <li class="header__customer__item">
+                    <button>
+                        <img src="./src/img/ico/shopping-cart.png" alt="Carrinho">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+<script src="./src/script/main.js"></script>
 </body>
 </html>
