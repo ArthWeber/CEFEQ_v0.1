@@ -7,7 +7,7 @@
     left: 0;
     transition: 0.5s ease;
     background-color: var.$bgPrincipal;
-    padding: 16px 56px;
+    padding: 16px 56px;    
 
     &__container {
         display: flex;
@@ -24,9 +24,9 @@
     }
 
     &__logo {
-        max-width: 200px;
+        max-width: 320px;
         width: 100%;
-        margin: 0 auto;
+        padding-top: 8px;        
         
         @media (max-width: 768px) {
             display: none;
@@ -132,14 +132,14 @@
 
         .search-icon {
             position: absolute;
-            right: 10px;
+            right:10px;
             border: none;
             background: none;
             cursor: pointer;
             
 
             img {
-                max-width: 32px;
+                max-width: 28px;
 
                 @media (max-width: 480px) {
                     max-width: 24px;
